@@ -1,0 +1,6 @@
+#Xcode
+*.xcworkspace
+xcuserdata
+
+#CocoaPod
+Pods/*
