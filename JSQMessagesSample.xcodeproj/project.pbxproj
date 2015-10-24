@@ -15,6 +15,10 @@
 		BA4B563E1BD7E60F0079A8F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4B563C1BD7E60F0079A8F1 /* LaunchScreen.storyboard */; };
 		BA4B56491BD7E60F0079A8F1 /* JSQMessagesSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4B56481BD7E60F0079A8F1 /* JSQMessagesSampleTests.swift */; };
 		BA4B56541BD7E60F0079A8F1 /* JSQMessagesSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4B56531BD7E60F0079A8F1 /* JSQMessagesSampleUITests.swift */; };
+		BA64F09E1BDBACAA00A63BFA /* CustomMessagesCollectionViewCellIncoming.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA64F09C1BDBACAA00A63BFA /* CustomMessagesCollectionViewCellIncoming.xib */; settings = {ASSET_TAGS = (); }; };
+		BA64F09F1BDBACAA00A63BFA /* CustomMessagesCollectionViewCellOutgoing.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA64F09D1BDBACAA00A63BFA /* CustomMessagesCollectionViewCellOutgoing.xib */; settings = {ASSET_TAGS = (); }; };
+		BA64F0A11BDBAF4300A63BFA /* CustomMessagesCollectionViewCellIncoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64F0A01BDBAF4300A63BFA /* CustomMessagesCollectionViewCellIncoming.swift */; settings = {ASSET_TAGS = (); }; };
+		BA64F0A31BDBAF7D00A63BFA /* CustomMessagesCollectionViewCellOutgoing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64F0A21BDBAF7D00A63BFA /* CustomMessagesCollectionViewCellOutgoing.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		BA4B564F1BD7E60F0079A8F1 /* JSQMessagesSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSQMessagesSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4B56531BD7E60F0079A8F1 /* JSQMessagesSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSQMessagesSampleUITests.swift; sourceTree = "<group>"; };
 		BA4B56551BD7E60F0079A8F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA64F09C1BDBACAA00A63BFA /* CustomMessagesCollectionViewCellIncoming.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomMessagesCollectionViewCellIncoming.xib; sourceTree = "<group>"; };
+		BA64F09D1BDBACAA00A63BFA /* CustomMessagesCollectionViewCellOutgoing.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomMessagesCollectionViewCellOutgoing.xib; sourceTree = "<group>"; };
+		BA64F0A01BDBAF4300A63BFA /* CustomMessagesCollectionViewCellIncoming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessagesCollectionViewCellIncoming.swift; sourceTree = "<group>"; };
+		BA64F0A21BDBAF7D00A63BFA /* CustomMessagesCollectionViewCellOutgoing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessagesCollectionViewCellOutgoing.swift; sourceTree = "<group>"; };
 		BD02ED3E6098024EE1ACCB2C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B0C988413F0A6EDBCF0545 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +125,10 @@
 			children = (
 				BA4B56331BD7E60F0079A8F1 /* AppDelegate.swift */,
 				BA4B56351BD7E60F0079A8F1 /* ViewController.swift */,
+				BA64F09C1BDBACAA00A63BFA /* CustomMessagesCollectionViewCellIncoming.xib */,
+				BA64F0A01BDBAF4300A63BFA /* CustomMessagesCollectionViewCellIncoming.swift */,
+				BA64F09D1BDBACAA00A63BFA /* CustomMessagesCollectionViewCellOutgoing.xib */,
+				BA64F0A21BDBAF7D00A63BFA /* CustomMessagesCollectionViewCellOutgoing.swift */,
 				BA4B56371BD7E60F0079A8F1 /* Main.storyboard */,
 				BA4B563A1BD7E60F0079A8F1 /* Assets.xcassets */,
 				BA4B563C1BD7E60F0079A8F1 /* LaunchScreen.storyboard */,
@@ -263,6 +275,8 @@
 				BA4B563E1BD7E60F0079A8F1 /* LaunchScreen.storyboard in Resources */,
 				BA4B563B1BD7E60F0079A8F1 /* Assets.xcassets in Resources */,
 				BA4B56391BD7E60F0079A8F1 /* Main.storyboard in Resources */,
+				BA64F09F1BDBACAA00A63BFA /* CustomMessagesCollectionViewCellOutgoing.xib in Resources */,
+				BA64F09E1BDBACAA00A63BFA /* CustomMessagesCollectionViewCellIncoming.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +336,8 @@
 			files = (
 				BA4B56361BD7E60F0079A8F1 /* ViewController.swift in Sources */,
 				BA4B56341BD7E60F0079A8F1 /* AppDelegate.swift in Sources */,
+				BA64F0A11BDBAF4300A63BFA /* CustomMessagesCollectionViewCellIncoming.swift in Sources */,
+				BA64F0A31BDBAF7D00A63BFA /* CustomMessagesCollectionViewCellOutgoing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

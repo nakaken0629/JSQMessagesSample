@@ -22,6 +22,17 @@ class ViewController: JSQMessagesViewController {
         self.senderId = "1"
         self.senderDisplayName = "user1"
         
+//        self.incomingCellIdentifier = CustomMessagesCollectionViewCellIncoming.cellReuseIdentifier()
+//        self.collectionView?.registerNib(CustomMessagesCollectionViewCellIncoming.nib(), forCellWithReuseIdentifier: self.incomingCellIdentifier)
+//        self.outgoingCellIdentifier = CustomMessagesCollectionViewCellOutgoing.cellReuseIdentifier()
+//        self.collectionView?.registerNib(CustomMessagesCollectionViewCellOutgoing.nib(), forCellWithReuseIdentifier: self.outgoingCellIdentifier)
+//        self.collectionView?.registerNib(CustomMessagesCollectionViewCellOutgoing.nib(), forCellWithReuseIdentifier: self.outgoingCellIdentifier)
+
+        self.incomingCellIdentifier = "CustomMessagesCollectionViewCellIncoming"
+        self.collectionView?.registerNib(UINib(nibName: "CustomMessagesCollectionViewCellIncoming", bundle: NSBundle(forClass: self.dynamicType)), forCellWithReuseIdentifier: self.incomingCellIdentifier)
+        self.outgoingCellIdentifier = "CustomMessagesCollectionViewCellOutgoing"
+        self.collectionView?.registerNib(UINib(nibName: "CustomMessagesCollectionViewCellOutgoing", bundle: NSBundle(forClass: self.dynamicType)), forCellWithReuseIdentifier: self.outgoingCellIdentifier)
+        
         let bubbleFactory = JSQMessagesBubbleImageFactory()
         self.incomingBubble = bubbleFactory.incomingMessagesBubbleImageWithColor(UIColor.jsq_messageBubbleLightGrayColor())
         self.outgoingBubble = bubbleFactory.outgoingMessagesBubbleImageWithColor(UIColor.jsq_messageBubbleGreenColor())
