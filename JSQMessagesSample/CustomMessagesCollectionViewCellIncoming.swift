@@ -7,5 +7,5 @@
 //
 
 class CustomMessagesCollectionViewCellIncoming: JSQMessagesCollectionViewCellIncoming {
-
+    @IBOutlet weak var timeLabel: UILabel!
 }
